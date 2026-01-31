@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic Homepage">
-    <meta name="keywords" content="Computer Science, PhD Student, Research, Machine Learning, Robotics">
-    <meta name="author" content="Anonymous">
-    <meta property="og:title" content="Academic Homepage - PhD Student">
-    <meta property="og:description" content="Research in computer science and related fields.">
+    <meta name="description" content="Jiayu Chen's Academic Homepage">
+    <meta name="keywords" content="Computer Science, Electric Engineering, Automation, Autonomous Control, Control Theory, Autonomous System, Undergrad, Undergraduate Student, Research, Machine Learning, Reinforcement Learning, Embodied Intelligence, Robotics, UAV, Gnerative Models, Diffusion Models, Aerial Robotics, Sim-to-Real">
+    <meta name="author" content="Jiayu Chen">
+    <meta property="og:title" content="Jiayu Chen - Undergrad Student">
+    <meta property="og:description" content="Jiayu Chen's Undergraduate Student in Automation">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="https://Jay-Jiayu-Chen.github.io/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@anonymous">
-    <title>Academic Homepage</title>
+    <meta name="twitter:creator" content="@jiayuChen65052">
+    <title>Jiayu Chen - Undergrad Student</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -20,13 +20,14 @@
 <body id="top">
     <header>
         <div class="header-content">
-            <h1>[Name]</h1>
-            <p>CS PhD Student • [University]</p>
+            <h1>Jiayu Chen(陈嘉宇)</h1>
+            <p>Undergraduate Student • Huazhong Univ. of Sci. and Tech.(HUST)</p>
             <div class="social-links-header">
-                <a href="#"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="#"><i class="fab fa-github"></i>GitHub</a>
-                <a href="mailto:email@university.edu"><i class="fas fa-envelope"></i>Email</a>
+                <!--a href="#"><i class="fas fa-graduation-cap"></i>Google Scholar</a-->
+                <!--a href="#"><i class="fab fa-twitter"></i>Twitter</a-->
+                <a href="https://github.com/Jay-Jiayu-Chen"><i class="fab fa-github"></i>GitHub</a>
+                <a href="mailto:u202414389@hust.edu.cn"><i class="fas fa-envelope"></i>Email</a>
+                <a href="assets/CV_Jiayu_Chen.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
             </div>
         </div>
         <div class="header-image">
@@ -36,21 +37,45 @@
 
     <main>
         <section id="about">
-            <p>Hi! I am a PhD student in Computer Science at [University], advised by <a href="#">[Advisor]</a>.</p>
+            <p>Welcome to my homepage! I am a sophomore in Automation(Innovation Class) at School of Artificial Intelligence and Automation, HUST;  also an undergraduate student at the Brain-inspired Intelligence and Intelligent Control(BIIC) Laboratory, co-advised by <a href="http://faculty.hust.edu.cn/SunJianKun/en/index.htm">Prof. Jiankun Sun</a> and <a href="mailto:zzyzhang@hust.edu.cn">Dr. Zhenyu Zhang</a>.</p>
+            <p>My long term goal is to pursue a Ph.D. degree in Robotics/CS/EE/ME, targeting 2028 fall admission. To this end, I am actively <b>seeking research opportunities for Summer 2026</b>, including visiting student positions, research internships, or collaborative projects at institutes abroad. Feel free to reach out if you see potential alignment—I'd welcome the chance to learn about your work and explore possibilities for collaboration or mentorship.</p>
         </section>
 
-        <section id="research">
-            <h2>Research</h2>
-            <p>My research focuses on <strong>[Research Area 1] and [Research Area 2]</strong>. My recent works explore:</p>
-            <ul>
-                <li>[Research Topic 1] (<a href="#">[Conference 1]'24</a>, <a href="#">[Conference 2]'23</a>, <a href="#">[Conference 3]'22</a>)</li>
+        <section id="research-interest">
+            <h2>Research Interest</h2>
+            <p>Still at the early stage of my research journey, I am exploring the synergy between deep learning, reinforcement learning, and control theory. My goal is to investigate their principled integration as a pathway toward achieving safer, more reliable, more data-efficient, and ultimately more trustworthy embodied intelligent systems.</p>
+            <!--ul>
+                <li></li>
                 <li>[Research Topic 2] (<a href="#">[Conference 4]'24</a>, <a href="#">[Conference 5]'23</a>, <a href="#">[Conference 6]'23</a>)</li>
                 <li>[Research Topic 3] (<a href="#">[Conference 7]'24</a>, <a href="#">[Conference 8]'23</a>, <a href="#">[Conference 9]'23</a>)</li>
                 <li>[Research Topic 4] (<a href="#">[Journal 1]'22</a>, <a href="#">[Journal 2]'21</a>)</li>
-            </ul>
+            </ul-->
+            <p>📈<b>Data Matters: Synthetic Experience Generation for RL</b><br>
+            Training reliable RL policies for robotics requires millions of environment interactions—prohibitively expensive for physical systems. I have investigated the research field of synthetic RL training data generation and augmentation leveraging generative models(diffusion&flow models), NeuralODEs. Currently I am conducting relevant baseline experiments on standard benchmarks.
+            </p>
+            <p>🛡️<b>Safety Matters: Constrained Learning for Safety-Critical Control</b><br>
+            Ensuring safety is critical for real-world deployment of autonomous systems. I am interested in exploring safe RL algorithms(Control Barrier Functions, Control Lyapunov Functions, Obstacle Avoidance) that can provide formal safety guarantees during both training and deployment phases.
+            </p>
+            <p>
+            🤖<b>Embodiment Matters: Sim2Real & Physical Deployment</b><br>
+            Learning algorithms ultimately prove their value in the messy reality of hardware—sensor noise, actuator latency, and unmodeled physics. While my current explorations are simulation-based, I am systematically building technical foundations for robotics(especially aerial robotics like UAVs or eVTOLs).
+            </p>
+            <p>
+                🧠<b>Intelligence Matters: an exploratory interest</b><br>
+                I am intrigued by the emerging paradigm of Vision-Language-Action (VLA) models—systems that ground high-level semantic understanding in low-level physical control. Coming from control theory, I am particularly interested in the safety and dynamics constraints that pure CV/NLP backgrounds often overlook in VLA systems. I am keen to investigate how generative world models can interface with multimodal perception in groups working at the intersection of robot learning and foundation models.
+            </p>
         </section>
 
-        <section id="news">
+        <section id="strengths">
+            <h2>Technical Strengths</h2>
+            <p>
+                Currently Proficient: C, Python, Matlab; PyTorch, Gymnasium, Minari, PyBullet; DL, RL, Generative Models, NeuralODEs; Git, LaTeX, Linux
+            </p>
+            <p>
+                Under Active Development: Classical&Modern Control Theory, embedded C++ for real-time systems, Gazebo, ROS/ROS2 architectures, UAV flight controllers(PX4, ArduPilot), simulation-to-reality transfer techniques
+            </p>
+        </section>
+        <!--section id="news">
             <h2>News</h2>
             <div class="news-container">
                 <ul class="news-list">
@@ -66,19 +91,19 @@
                     <li>[MM/YYYY]: [News Item 10]</li>
                 </ul>
             </div>
-        </section>
+        </section-->
 
-        <section id="publications">
+        <!--section id="publications">
             <div class="publications-header">
                 <h2 id="toggle-header">Selected Publications</h2>
                 <button id="toggle-publications" class="toggle-publications">Show All</button>
             </div>
             <div id="publications-container">
                 <!-- Publications will be dynamically loaded here -->
-            </div>
-        </section>
+            <!--/div>
+        </section-->
 
-        <section id="awards">
+        <!--section id="awards">
             <h2>Awards</h2>
             <div class="award-item">
                 <span class="award-year">[YYYY]</span>
@@ -104,9 +129,9 @@
                 <span class="award-year">[YYYY]</span>
                 <div class="award-desc">[Award 6]</div>
             </div>
-        </section>
+        </section-->
 
-        <section id="services">
+        <!--section id="services">
             <h2>Services</h2>
             <div class="service-category">
                 <div class="service-title">Reviewer</div>
@@ -122,18 +147,18 @@
                 <div class="service-title">Volunteer</div>
                 <p>[Role 1], [Role 2], [Role 3]</p>
             </div>
-        </section>
+        </section-->
 
-        <section id="miscellaneous">
+        <!--section id="miscellaneous">
             <h2>Miscellaneous</h2>
             <div class="misc-item">
                 <p>[Optional] Share your hobbies and interests here.</p>
             </div>
-        </section>
+        </section-->
     </main>
 
     <footer>
-        <p>Last updated: [Month YYYY]. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
+        <p>Last updated: Jan 2026. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
     </footer>
 
     <div id="imageModal" class="modal">

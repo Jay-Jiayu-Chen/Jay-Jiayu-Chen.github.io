@@ -39,4 +39,4 @@ MIT License
 
 ---
 
-For a live example, visit [Yuhui Zhang's website](https://cs.stanford.edu/~yuhuiz/).
+For a live example, visit [Yuhui Zhang&#39;s website](https://cs.stanford.edu/~yuhuiz/).
