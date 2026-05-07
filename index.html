@@ -37,44 +37,62 @@
 
     <main>
         <section id="about">
-            <p>Welcome to my homepage! I am a sophomore in Automation(Innovation Class) at School of Artificial Intelligence and Automation, HUST;  also an undergraduate student at the Brain-inspired Intelligence and Intelligent Control(BIIC) Laboratory, co-advised by <a href="http://faculty.hust.edu.cn/SunJianKun/en/index.htm">Prof. Jiankun Sun</a> and <a href="mailto:zzyzhang@hust.edu.cn">Dr. Zhenyu Zhang</a>.</p>
-            <p>My long term goal is to pursue a Ph.D. degree in Robotics/CS/EE/ME, targeting 2028 fall admission. To this end, I am actively <b>seeking research opportunities for Summer 2026</b>, including visiting student positions, research internships, or collaborative projects at institutes abroad. Feel free to reach out if you see potential alignment—I'd welcome the chance to learn about your work and explore possibilities for collaboration or mentorship.</p>
+            <p>Welcome to my homepage! I am a sophomore in Automation(Innovation Class) at 
+                School of Artificial Intelligence and Automation, HUST;  
+                also an undergraduate researcher in <strong><em>learning, dynamics and control</em></strong></p>
+            <p>I study learning, dynamics and control for physical systems where 
+                nonlinearity, hard constraints, and high failure costs rule out simple solutions. 
+                I take physical structure as the starting point, 
+                not as an obstacle to overcome, but as the native grammar 
+                any intelligent behavior must respect. 
+                My aim is to let the system's physics determine 
+                how these three elements should be composed, 
+                and to close the loop on real hardware, where simulation alone is never enough.</p>
         </section>
 
-        <section id="research-interest">
-            <h2>Research Interest</h2>
-            <p>Still at the early stage of my research journey, I am exploring the synergy between deep learning, reinforcement learning, and control theory. My goal is to investigate their principled integration as a pathway toward achieving safer, more reliable, more data-efficient, and ultimately more trustworthy embodied intelligent systems.</p>
+        <section id="current-work">
+            <h2>Current Work</h2>
             <!--ul>
                 <li></li>
                 <li>[Research Topic 2] (<a href="#">[Conference 4]'24</a>, <a href="#">[Conference 5]'23</a>, <a href="#">[Conference 6]'23</a>)</li>
                 <li>[Research Topic 3] (<a href="#">[Conference 7]'24</a>, <a href="#">[Conference 8]'23</a>, <a href="#">[Conference 9]'23</a>)</li>
                 <li>[Research Topic 4] (<a href="#">[Journal 1]'22</a>, <a href="#">[Journal 2]'21</a>)</li>
             </ul-->
-            <p>📈<b>Data Matters: Synthetic Experience Generation for RL</b><br>
-            Training reliable RL policies for robotics requires millions of environment interactions—prohibitively expensive for physical systems. I have investigated the research field of synthetic RL training data generation and augmentation leveraging generative models(diffusion&flow models), NeuralODEs. Currently I am conducting relevant baseline experiments on standard benchmarks.
+            <p><b>Physically-Consistent Trajectory Generation for RL on continuous control benchmarks</b><br>
+            Reinforcement learning in continuous control domains suffers from data scarcity, yet standard generative augmentation produces trajectories that violate physical constraints like dynamics and kinematics feasibility, torque limits, boundary conditions, etc.
             </p>
-            <p>🛡️<b>Safety Matters: Constrained Learning for Safety-Critical Control</b><br>
-            Ensuring safety is critical for real-world deployment of autonomous systems. I am interested in exploring safe RL algorithms(Control Barrier Functions, Control Lyapunov Functions, Obstacle Avoidance) that can provide formal safety guarantees during both training and deployment phases.
-            </p>
-            <p>
-            🤖<b>Embodiment Matters: Sim2Real & Physical Deployment</b><br>
-            Learning algorithms ultimately prove their value in the messy reality of hardware—sensor noise, actuator latency, and unmodeled physics. While my current explorations are simulation-based, I am systematically building technical foundations for robotics(especially aerial robotics like UAVs or eVTOLs).
-            </p>
-            <p>
-                🧠<b>Intelligence Matters: an exploratory interest</b><br>
-                I am intrigued by the emerging paradigm of Vision-Language-Action (VLA) models—systems that ground high-level semantic understanding in low-level physical control. Coming from control theory, I am particularly interested in the safety and dynamics constraints that pure CV/NLP backgrounds often overlook in VLA systems. I am keen to investigate how generative world models can interface with multimodal perception in groups working at the intersection of robot learning and foundation models.
-            </p>
+            <p>I am developing a constrained generative framework that enforces physical consistency during trajectory synthesis. 
+                The approach embeds both learned transition dynamics and explicitly declared physical constraints directly into the diffusion sampling process.
+                The resulting trajectories respect the system's physical limits by construction.</p>
         </section>
 
-        <section id="strengths">
-            <h2>Technical Strengths</h2>
+        <section id="other directions">
+            <h2>Other Directions</h2>
             <p>
-                Currently Proficient: C, Python, Matlab; PyTorch, Gymnasium, Minari, PyBullet; DL, RL, Generative Models, NeuralODEs; Git, LaTeX, Linux
+                Early stage work about nonlinear dynamics learning and control of underactuated systems.
             </p>
-            <p>
-                Under Active Development: Classical&Modern Control Theory, embedded C++ for real-time systems, Gazebo, ROS/ROS2 architectures, UAV flight controllers(PX4, ArduPilot), simulation-to-reality transfer techniques
-            </p>
+            <p>Keywords: nonlinear dynamics, DeepONet, VIV, underactuated systems, optimal control, underwater robotics</p>
         </section>
+
+        <section id="foundations">
+            <h2>Technical Foundations</h2>
+            <p><b>Programming Languages:</b> C, Python, (C++, Java, ...)</p>
+
+            <p><b>Frameworks & Libraries:</b> PyTorch, (...)</p>
+
+            <p><b>Domain Knowledge:</b> Control, Dynamics, Reinforcement Learning, Deep Learning, Generative Models</p>
+
+            <p><b>Tools & Platforms:</b> Git, Linux, LaTeX</p>
+        </section>
+        
+        <section id="future">
+            <h2>Future Directions</h2>
+
+            <p>Embedded systems and real-time control for nonlinear physical platforms.</p>
+
+            <p>System integration: from dynamics modeling to actuator-level deployment.</p>
+        </section>
+
         <!--section id="news">
             <h2>News</h2>
             <div class="news-container">
