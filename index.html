@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jiayu Chen's Academic Homepage">
-    <meta name="keywords" content="Computer Science, Electric Engineering, Automation, Autonomous Control, Control Theory, Autonomous System, Undergrad, Undergraduate Student, Research, Machine Learning, Reinforcement Learning, Embodied Intelligence, Robotics, UAV, Gnerative Models, Diffusion Models, Aerial Robotics, Sim-to-Real">
+    <meta name="description" content="Jiayu Chen, third-year undergraduate in Automation at Huazhong University of Science and Technology. Learning and control of dynamical systems.">
+    <meta name="keywords" content="Jiayu Chen, Chen Jiayu, Automation, HUST, Huazhong University of Science and Technology, control, dynamical systems, machine learning, reinforcement learning, model predictive control, neural operator, diffusion models, robotics, underwater vehicle">
     <meta name="author" content="Jiayu Chen">
-    <meta property="og:title" content="Jiayu Chen - Undergrad Student">
-    <meta property="og:description" content="Jiayu Chen's Undergraduate Student in Automation">
+    <meta property="og:title" content="Jiayu Chen">
+    <meta property="og:description" content="Third-year undergraduate in Automation at Huazhong University of Science and Technology.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://Jay-Jiayu-Chen.github.io/">
+    <meta property="og:image" content="https://Jay-Jiayu-Chen.github.io/images/profile.jpg">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@jiayuChen65052">
-    <title>Jiayu Chen - Undergrad Student</title>
+    <title>Jiayu Chen</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='50' fill='%234a74b9'/%3E%3Ctext x='50' y='50' font-family='Georgia,serif' font-size='46' fill='%23fff' text-anchor='middle' dominant-baseline='central'%3EJC%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -20,169 +22,63 @@
 <body id="top">
     <header>
         <div class="header-content">
-            <h1>Jiayu Chen(陈嘉宇)</h1>
-            <p>Undergraduate Student • Huazhong Univ. of Sci. and Tech.(HUST)</p>
+            <h1>Jiayu Chen<span class="name-zh">陈嘉宇</span></h1>
+            <p class="affiliation">Third-year undergraduate · Automation (Innovation Class) · Huazhong University of Science and Technology</p>
             <div class="social-links-header">
-                <!--a href="#"><i class="fas fa-graduation-cap"></i>Google Scholar</a-->
-                <!--a href="#"><i class="fab fa-twitter"></i>Twitter</a-->
                 <a href="https://github.com/Jay-Jiayu-Chen"><i class="fab fa-github"></i>GitHub</a>
-                <a href="mailto:u202414389@hust.edu.cn"><i class="fas fa-envelope"></i>Email</a>
-                <a href="assets/CV_Jiayu_Chen.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
+                <a href="mailto:jiayuchen@hust.edu.cn"><i class="fas fa-envelope"></i>Email</a>
+                <a href="assets/CV_Jiayu_Chen.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i>CV</a>
             </div>
         </div>
         <div class="header-image">
-            <img src="images/profile.jpg" alt="Profile Photo">
+            <img src="images/profile.jpg" alt="Jiayu Chen">
         </div>
     </header>
 
     <main>
         <section id="about">
-            <p>Welcome to my homepage! I am a sophomore in Automation(Innovation Class) at 
-                School of Artificial Intelligence and Automation, HUST;  
-                also an undergraduate researcher in <strong><em>learning, dynamics and control</em></strong></p>
-            <p>I study learning, dynamics and control for physical systems where 
-                nonlinearity, hard constraints, and high failure costs rule out simple solutions. 
-                I take physical structure as the starting point, 
-                not as an obstacle to overcome, but as the native grammar 
-                any intelligent behavior must respect. 
-                My aim is to let the system's physics determine 
-                how these three elements should be composed, 
-                and to close the loop on real hardware, where simulation alone is never enough.</p>
+            <h2>About</h2>
+            <p>I am a third-year undergraduate in Automation (Innovation Class) at Huazhong University of Science and Technology. My interest is in learning and control of dynamical systems. I am preparing to apply for a Ph.D.</p>
         </section>
 
-        <section id="current-work">
-            <h2>Current Work</h2>
-            <!--ul>
-                <li></li>
-                <li>[Research Topic 2] (<a href="#">[Conference 4]'24</a>, <a href="#">[Conference 5]'23</a>, <a href="#">[Conference 6]'23</a>)</li>
-                <li>[Research Topic 3] (<a href="#">[Conference 7]'24</a>, <a href="#">[Conference 8]'23</a>, <a href="#">[Conference 9]'23</a>)</li>
-                <li>[Research Topic 4] (<a href="#">[Journal 1]'22</a>, <a href="#">[Journal 2]'21</a>)</li>
-            </ul-->
-            <p><b>Physically-Consistent Trajectory Generation for RL on continuous control benchmarks</b><br>
-            Reinforcement learning in continuous control domains suffers from data scarcity, yet standard generative augmentation produces trajectories that violate physical constraints like dynamics and kinematics feasibility, torque limits, boundary conditions, etc.
-            </p>
-            <p>I am developing a constrained generative framework that enforces physical consistency during trajectory synthesis. 
-                The approach embeds both learned transition dynamics and explicitly declared physical constraints directly into the diffusion sampling process.
-                The resulting trajectories respect the system's physical limits by construction.</p>
+        <section id="research">
+            <h2>Research</h2>
+
+            <article class="entry">
+                <h3>Guiding trajectory generation with robot dynamics</h3>
+                <p class="byline">BIIC Laboratory, HUST · with Dr. Zhengyu Zhang and Prof. Jiankun Sun</p>
+                <p>A simulated runner can only push so hard or bend a joint so far. How can a generative model account for those limits when it creates new experience for a robot to learn from? We explored this question in offline reinforcement learning, where a policy learns from previously collected interactions. Using the HalfCheetah locomotion benchmark, we guided a diffusion model as it generated short trajectories. A learned dynamics model assessed how well each movement followed from the preceding state and action, while penalties steered samples away from actuator and joint limits. We then used the generated experience to study how physical consistency affects policy learning.</p>
+            </article>
+
+            <article class="entry">
+                <h3>Learning to predict motion for model predictive control</h3>
+                <p class="byline">i<sup>4</sup>-FSI Laboratory, Westlake University · with Prof. Dixia Fan</p>
+                <div class="entry-figs">
+                    <figure>
+                        <img src="images/swingup-mpc.webp" width="480" height="222" loading="lazy"
+                             alt="Animation of the simulated slider–pendulum swinging up and being held upright by the learned-model MPC controller.">
+                        <figcaption>Closed-loop swing-up and stabilization, simulated.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/auv-gazebo.webp" width="480" height="226" loading="lazy"
+                             alt="Gazebo simulation view of the underwater vehicle's path, with two trajectories and the seabed.">
+                        <figcaption>Path following in the Gazebo vehicle simulation.</figcaption>
+                    </figure>
+                </div>
+                <p>Steering an underwater vehicle through a bend means anticipating where today's thrust and steering commands will take it several seconds later. We explored whether a neural operator could learn that relationship well enough to guide a controller. We started with a simulated slider–pendulum, using DeepONet to predict how a sequence of forces would move the pendulum as the controller swung it upright and balanced it. We then extended the approach to 3D underwater path following with a multi-input neural operator. At each update, the controller used the learned model to compare possible maneuvers, applied the first command, and replanned from the vehicle's new state.</p>
+            </article>
         </section>
 
-        <section id="other directions">
-            <h2>Other Directions</h2>
-            <p>
-                Early stage work about nonlinear dynamics learning and control of underactuated systems.
-            </p>
-            <p>Keywords: nonlinear dynamics, DeepONet, VIV, underactuated systems, optimal control, underwater robotics</p>
+        <section id="tools">
+            <h2>Tools</h2>
+            <p>Python, C, Java · PyTorch · Linux, Git, LaTeX</p>
         </section>
-
-        <section id="foundations">
-            <h2>Technical Foundations</h2>
-            <p><b>Programming Languages:</b> C, Python, (C++, Java, ...)</p>
-
-            <p><b>Frameworks & Libraries:</b> PyTorch, (...)</p>
-
-            <p><b>Domain Knowledge:</b> Control, Dynamics, Reinforcement Learning, Deep Learning, Generative Models</p>
-
-            <p><b>Tools & Platforms:</b> Git, Linux, LaTeX</p>
-        </section>
-        
-        <section id="future">
-            <h2>Future Directions</h2>
-
-            <p>Embedded systems and real-time control for nonlinear physical platforms.</p>
-
-            <p>System integration: from dynamics modeling to actuator-level deployment.</p>
-        </section>
-
-        <!--section id="news">
-            <h2>News</h2>
-            <div class="news-container">
-                <ul class="news-list">
-                    <li>[MM/YYYY]: [News Item 1]</li>
-                    <li>[MM/YYYY]: [News Item 2]</li>
-                    <li>[MM/YYYY]: [News Item 3]</li>
-                    <li>[MM/YYYY]: [News Item 4]</li>
-                    <li>[MM/YYYY]: [News Item 5]</li>
-                    <li>[MM/YYYY]: [News Item 6]</li>
-                    <li>[MM/YYYY]: [News Item 7]</li>
-                    <li>[MM/YYYY]: [News Item 8]</li>
-                    <li>[MM/YYYY]: [News Item 9]</li>
-                    <li>[MM/YYYY]: [News Item 10]</li>
-                </ul>
-            </div>
-        </section-->
-
-        <!--section id="publications">
-            <div class="publications-header">
-                <h2 id="toggle-header">Selected Publications</h2>
-                <button id="toggle-publications" class="toggle-publications">Show All</button>
-            </div>
-            <div id="publications-container">
-                <!-- Publications will be dynamically loaded here -->
-            <!--/div>
-        </section-->
-
-        <!--section id="awards">
-            <h2>Awards</h2>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 1]</div>
-            </div>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 2]</div>
-            </div>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 3]</div>
-            </div>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 4]</div>
-            </div>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 5]</div>
-            </div>
-            <div class="award-item">
-                <span class="award-year">[YYYY]</span>
-                <div class="award-desc">[Award 6]</div>
-            </div>
-        </section-->
-
-        <!--section id="services">
-            <h2>Services</h2>
-            <div class="service-category">
-                <div class="service-title">Reviewer</div>
-                <p>[Conference 1 YYYY], [Conference 2 YYYY], [Conference 3 YYYY], [Conference 4 YYYY], [Journal 1 YYYY], [Journal 2 YYYY]</p>
-            </div>
-
-            <div class="service-category">
-                <div class="service-title">Teaching Assistant</div>
-                <p><a href="#">[Course Code 1]</a>, <a href="#">[Course Code 2]</a></p>
-            </div>
-
-            <div class="service-category">
-                <div class="service-title">Volunteer</div>
-                <p>[Role 1], [Role 2], [Role 3]</p>
-            </div>
-        </section-->
-
-        <!--section id="miscellaneous">
-            <h2>Miscellaneous</h2>
-            <div class="misc-item">
-                <p>[Optional] Share your hobbies and interests here.</p>
-            </div>
-        </section-->
     </main>
 
     <footer>
-        <p>Last updated: May 2026. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
+        <p>Last updated: November 2026. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
     </footer>
 
-    <div id="imageModal" class="modal">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
